@@ -2,13 +2,13 @@ folium
 ijson
 imagesize
 jsonschema
-jupyter-cms
+#jupyter-cms
 jupyter-contrib-nbextensions
-jupyter-dashboards
+#jupyter-dashboards
 jupyter-nbextensions-configurator
 langid
 mpld3
 nbpresent
-seaborn
+#seaborn
 vincent
 Whoosh
