@@ -38,4 +38,4 @@ RUN conda install -c conda-forge jupyter_contrib_nbextensions && \
     bash -c "source activate python3 && \
         pip install -r requirements.txt"
 
-RUN jupyter nbextension enable --py --sys-prefix widgetsnbextension
+RUN conda install -y -c conda-forge ipywidgets
