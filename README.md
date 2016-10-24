@@ -9,4 +9,4 @@ Teilnehmer der Vorlesung werden angeregt, selbst eine Arbeitsumgebung für die N
 
 Die Vorlesung richtet sich an Interessierte der Geisteswissenschaften und reflektiert ihre wissenschaftstheoretischen Voraussetzungen und Möglichkeiten. Computerkenntnisse jenseits der Handhabung von Office-Programmen und Webbrowsern sind nicht erforderlich. Die Sprache Python wird für die Vorlesung benutzt und mit kleinen Übungen beispielhaft angewendet.
 
-[Aktueller binder](http://mybinder.org/status/computational-humanities/vorlesung) beruht auf Commit [41ea3f7](https://github.com/computational-humanities/vorlesung/commit/41ea3f720391b6ccf4132481041d9b150e1c3daa)
+[Aktueller binder](http://mybinder.org/status/computational-humanities/vorlesung) beruht auf Commit [9387fb4](https://github.com/computational-humanities/vorlesung/commit/9387fb4be39dac13813804a8fafbb4d949f9580b)
