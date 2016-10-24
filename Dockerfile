@@ -10,9 +10,7 @@ ENV DASHBOARDS_VERSION 0.6.1
 ENV CMS_VERSION 0.6.1
 
 # get to the latest jupyter release and necessary libraries
-RUN conda install -y jupyter seaborn futures && \
-    bash -c "source activate python3 && \
-        conda install seaborn"
+RUN conda install -y jupyter
 
 # install incubator extensions
 RUN pip install jupyter_dashboards==$DASHBOARDS_VERSION \
