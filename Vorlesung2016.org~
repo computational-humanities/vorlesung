@@ -57,13 +57,11 @@
 *** Dokumente
 *** Software, Installation
 **** Computational in Python
-     - https://pypi.python.org/pypi
+**** Webumgebung
+    - https://wakari.io/
 **** Notebooks und literate Programming
     - http://nbviewer.jupyter.org/github/ipython/ipython/blob/2.x/examples/Notebook/Index.ipynb
 **** Pandas Datenorganisation
     - http://pandas.pydata.org/pandas-docs/stable/index.html
 **** Jupyter Notebooks
-***** Arbeiten mit Jupyter Notebooks
-      - http://lectures.quantecon.org/py/getting_started.html 
-***** Tips
-      -  https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/
+    -  https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/
