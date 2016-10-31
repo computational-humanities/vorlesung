@@ -1,0 +1,5 @@
+#emacs chache files
+*.*~
+
+# IPython Notebook
+.ipynb_checkpoints
