@@ -1,5 +1,5 @@
 #+TITLE: Wissenschaftstheorie und Computational Humanities
-#+AUTHOR: Gerd GraÃŸhoff
+#+AUTHOR: Gerd Graßhoff
 #+DATE: October 2016
  
 
@@ -17,19 +17,39 @@
 #+HTML_HEAD: <script type="text/javascript" src="styles/bigblow/js/hideshow.js"></script>
 #+HTML_HEAD: <script type="text/javascript" src="styles/lib/js/jquery.stickytableheaders.min.js"></script>
 
+* Zugang
+** Notebooks anschauen
+*[[https://github.com/computational-humanities/vorlesung/blob/master/index.ipynb][Index-Notebook]]*
+
+Die Notebooks zur Vorlesung werden auf Github bereitgestellt und können dort als statische Dokumente angeschaut werden.
+In dem [[https://github.com/computational-humanities/vorlesung/blob/master/index.ipynb][Index-Notebook]] werden im Laufe des Semesters alle Vorlesungen verlinkt sein.
+
+** Notebooks interaktiv nutzen
+*[[http://mybinder.org/repo/computational-humanities/vorlesung][Binder-Umgebung]]*
+
+Um die Befehle in den Notebooks auszuführen, muss man die [[http://mybinder.org/repo/computational-humanities/vorlesung][Binder-Umgebung]] aufrufen. Auch hier wird am Anfang das Index-Notebook geöffnet 
+und alle Vorlesungen werden nach und nach verlinkt. Sämtliche Befehle können ausgeführt und auch verändert werden. Wichtig ist, dass nach 
+etwa einer halben Stunde Inaktivität die Umgebung deaktiviert wird. Alle Änderungen sind dann verloren. Sollen Änderungen gespeichert 
+werden, muss das Notebook auf den eigenen Rechner heruntergeladen werden.   
+
+** Notebooks dauerhaft bearbeiten
+Um Notebook-Änderungen dauerhaft verfügbar zu haben,  bieten sich mehrere Möglichkeiten.
+- Die einfachste Möglichkeit ist, die Änderungen in Binder lokal zu speichern und dann für das weiter-bearbeiten bei der nächsten Anmeldung wieder hochzuladen. Dazu wird im Menü File -> Open ausgewählt und in dem neuen Browser-Fenster der Knopf Upload gedrückt. Dann einfach den Hinweisen folgen.
+- Die etwas anspruchsvollere Variante wäre eine Installation der Jupyter-Umgebung auf dem eigenen Rechner. Dies kann relativ einfach durch das [[https://www.continuum.io/downloads][Anaconda]] Paket geschehen. Allerdings müssen dann spezielle Software-Pakete per Hand nach installiert werden.
+- Im [[https://sagemathcloud.com/][SageMathCloud]] Service wird eine kostenlose Jupyter-Notebook Umgebung geboten (und noch viel mehr...). Allerdings können fehlende Software-Pakete nicht problemlos (d.h. kostenlos) nach installiert werden. 
 
 * Vorlesung
-** Vorl 1: EinfÃ¼hrung
+** Vorl 1: Einführung
 *** Thema der Vorlesung
 **** Digital Humantities vs. Computational Humanities
-*** Erkenntnis und Daten Ã¼ber die Welt
+*** Erkenntnis und Daten über die Welt
 **** Kleine Anleihen an Terminologie Wittgensteins:
 ***** Tractatus logico philosophicus als Vorlage
 ***** Tractatus philosophicus digitalis
 **** Ziel des Umgangs mit Daten
-***** Aussagen Ã¼ber was da ist: explaining what there is
+***** Aussagen über was da ist: explaining what there is
 ****** Die Welt ist alles was der Fall ist, der Fall ist, was als Tatsache besteht.
-***** ErklÃ¤rung warum etwas geworden ist, oder sich so verÃ¤ndert wie es wurde, wird, oder werden wird.
+***** Erklärung warum etwas geworden ist, oder sich so verändert wie es wurde, wird, oder werden wird.
 **** Organisation
 ** Vorl 2: Daten und Objekte
 *** Datenstrukturen
@@ -49,7 +69,7 @@
 ***** http://pandas.pydata.org/pandas-docs/stable/cookbook.html#cookbook
 ** Vorl xx: Bayes
 
-** Vorl x: Phylogenetische BÃ¤ume
+** Vorl x: Phylogenetische Bäume
 ** Vorl x1: Textanalyse mit Textblog
 *** Natural Language
     - 
@@ -67,3 +87,42 @@
       - http://lectures.quantecon.org/py/getting_started.html 
 ***** Tips
       -  https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/
+
+* Workflow
+** Github
+Am Anfang einer Arbeitssession muss man die aktuellen Änderungen aus dem repository abrufen, damit später (möglichst) keine Konflikte beim mergen auftreten:
+   : git pull origin master
+
+Dann hat man lokal den Stand des online repositories und kann normal arbeiten. Wenn Änderungen in das repository gebracht werden sollen, kann man den Status mit
+   : git status
+
+abrufen und die zu ändernden Dateien hinzufügen mit
+
+   : git add DATEI  (für die einzelnen Dateien)
+
+oder
+   : git add --all   (um alle Änderungen auf einmal hinzuzufügen)
+
+dann werden mit
+   : git commit -m 'NACHRICHT'
+die Änderungen in die staging area geschrieben und um sie online zu bringen wird
+
+   : git push origin master
+
+ausgeführt. Dann sind die letzten Änderungen auch online verfügbar. 
+
+#+begin_warning
+Achtung: Durch die folgenden Schritte werden alle lokalen Änderungen verworfen.
+#+end_warning
+
+Sollten lokale, nicht benötigte Änderungen einen merge verhindern, können diese durch den Aufruf von 
+   : git fetch origin 
+und 
+   : git reset --hard origin/master
+verworfen werden. Der lokale Zweig wird dann auf den Zustand des Master-Zweigs im online repository gesetzt. Das kann man z.B. an Hand der letzten Commit-Message überprüfen. Nach diesen Schritten können wieder normal auf dem lokalen Verzeichnis Änderungen vorgenommen werden und dann mit git add, commit, push zu dem online repository hinzugefügt werden. 
+
+** Binder
+
+Bei maßgeblichen Änderungen an dem Github-Repository, kann es nötig sein neue Python-Pakete in den Binder-Container einzubinden. 
+Dazu kann die Datei requirements.txt ergänzt werden. Sollen Software-Pakete auf Systemebene hinzugefügt werden, muss die Datei Dockerfile 
+angepasst werden. Die Änderungen können dann über die Binder-Status Seite übernommen werden. 
