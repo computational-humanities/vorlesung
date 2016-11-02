@@ -17,26 +17,11 @@
 #+HTML_HEAD: <script type="text/javascript" src="styles/bigblow/js/hideshow.js"></script>
 #+HTML_HEAD: <script type="text/javascript" src="styles/lib/js/jquery.stickytableheaders.min.js"></script>
 
-* Zugang
-** Notebooks anschauen
-*[[https://github.com/computational-humanities/vorlesung/blob/master/index.ipynb][Index-Notebook]]*
 
-Die Notebooks zur Vorlesung werden auf Github bereitgestellt und können dort als statische Dokumente angeschaut werden.
-In dem [[https://github.com/computational-humanities/vorlesung/blob/master/index.ipynb][Index-Notebook]] werden im Laufe des Semesters alle Vorlesungen verlinkt sein.
 
-** Notebooks interaktiv nutzen
-*[[http://mybinder.org/repo/computational-humanities/vorlesung][Binder-Umgebung]]*
-
-Um die Befehle in den Notebooks auszuführen, muss man die [[http://mybinder.org/repo/computational-humanities/vorlesung][Binder-Umgebung]] aufrufen. Auch hier wird am Anfang das Index-Notebook geöffnet 
-und alle Vorlesungen werden nach und nach verlinkt. Sämtliche Befehle können ausgeführt und auch verändert werden. Wichtig ist, dass nach 
-etwa einer halben Stunde Inaktivität die Umgebung deaktiviert wird. Alle Änderungen sind dann verloren. Sollen Änderungen gespeichert 
-werden, muss das Notebook auf den eigenen Rechner heruntergeladen werden.   
-
-** Notebooks dauerhaft bearbeiten
-Um Notebook-Änderungen dauerhaft verfügbar zu haben,  bieten sich mehrere Möglichkeiten.
-- Die einfachste Möglichkeit ist, die Änderungen in Binder lokal zu speichern und dann für das weiter-bearbeiten bei der nächsten Anmeldung wieder hochzuladen. Dazu wird im Menü File -> Open ausgewählt und in dem neuen Browser-Fenster der Knopf Upload gedrückt. Dann einfach den Hinweisen folgen.
-- Die etwas anspruchsvollere Variante wäre eine Installation der Jupyter-Umgebung auf dem eigenen Rechner. Dies kann relativ einfach durch das [[https://www.continuum.io/downloads][Anaconda]] Paket geschehen. Allerdings müssen dann spezielle Software-Pakete per Hand nach installiert werden.
-- Im [[https://sagemathcloud.com/][SageMathCloud]] Service wird eine kostenlose Jupyter-Notebook Umgebung geboten (und noch viel mehr...). Allerdings können fehlende Software-Pakete nicht problemlos (d.h. kostenlos) nach installiert werden. 
+* Eingang
+#+ATTR_HTML: :target _blank
+*[[http://mybinder.org/repo/computational-humanities/vorlesung][Hier klicken]]* um Notebooks zu bearbeiten.
 
 * Vorlesung
 ** Vorl 1: Einführung
@@ -87,6 +72,27 @@ Um Notebook-Änderungen dauerhaft verfügbar zu haben,  bieten sich mehrere Möglic
       - http://lectures.quantecon.org/py/getting_started.html 
 ***** Tips
       -  https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/
+
+* Zugang
+** Notebooks anschauen
+*[[https://github.com/computational-humanities/vorlesung/blob/master/index.ipynb][Index-Notebook]]*
+
+Die Notebooks zur Vorlesung werden auf Github bereitgestellt und können dort als statische Dokumente angeschaut werden.
+In dem [[https://github.com/computational-humanities/vorlesung/blob/master/index.ipynb][Index-Notebook]] werden im Laufe des Semesters alle Vorlesungen verlinkt sein.
+
+** Notebooks interaktiv nutzen
+*[[http://mybinder.org/repo/computational-humanities/vorlesung][Binder-Umgebung]]*
+
+Um die Befehle in den Notebooks auszuführen, muss man die [[http://mybinder.org/repo/computational-humanities/vorlesung][Binder-Umgebung]] aufrufen. Auch hier wird am Anfang das Index-Notebook geöffnet 
+und alle Vorlesungen werden nach und nach verlinkt. Sämtliche Befehle können ausgeführt und auch verändert werden. Wichtig ist, dass nach 
+etwa einer halben Stunde Inaktivität die Umgebung deaktiviert wird. Alle Änderungen sind dann verloren. Sollen Änderungen gespeichert 
+werden, muss das Notebook auf den eigenen Rechner heruntergeladen werden.   
+
+** Notebooks dauerhaft bearbeiten
+Um Notebook-Änderungen dauerhaft verfügbar zu haben,  bieten sich mehrere Möglichkeiten.
+- Die einfachste Möglichkeit ist, die Änderungen in Binder lokal zu speichern und dann für das weiter-bearbeiten bei der nächsten Anmeldung wieder hochzuladen. Dazu wird im Menü File -> Open ausgewählt und in dem neuen Browser-Fenster der Knopf Upload gedrückt. Dann einfach den Hinweisen folgen.
+- Die etwas anspruchsvollere Variante wäre eine Installation der Jupyter-Umgebung auf dem eigenen Rechner. Dies kann relativ einfach durch das [[https://www.continuum.io/downloads][Anaconda]] Paket geschehen. Allerdings müssen dann spezielle Software-Pakete per Hand nach installiert werden.
+- Im [[https://sagemathcloud.com/][SageMathCloud]] Service wird eine kostenlose Jupyter-Notebook Umgebung geboten (und noch viel mehr...). Allerdings können fehlende Software-Pakete nicht problemlos (d.h. kostenlos) nach installiert werden. 
 
 * Workflow
 ** Github
