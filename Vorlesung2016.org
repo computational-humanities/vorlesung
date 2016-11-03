@@ -45,10 +45,9 @@
       - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4792175/
       - http://datafairport.org/fair-principles-living-document-menu
       - http://www.nature.com/articles/sdata201618
-
-
 *** Ziel
-    - Wissensdomaine: wie drücke ich Sachverhalte aus?
+    - Wissensdomaine: wie beschreibe ich mit einer hybriden Sprache
+      Sachverhalte der Wissensdomain?
     - Individuum
     - Art / Begriff / Prädikate
     - Logische Form
