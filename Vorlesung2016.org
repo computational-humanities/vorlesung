@@ -17,6 +17,105 @@
 #+HTML_HEAD: <script type="text/javascript" src="styles/bigblow/js/hideshow.js"></script>
 #+HTML_HEAD: <script type="text/javascript" src="styles/lib/js/jquery.stickytableheaders.min.js"></script>
 
+
+
+* Eingang
+#+ATTR_HTML: :target _blank
+*[[http://mybinder.org/repo/computational-humanities/vorlesung][Hier klicken]]* um Notebooks zu bearbeiten.
+
+* Vorlesung
+** Vorl 1: Einführung
+*** Thema der Vorlesung
+**** Digital Humantities vs. Computational Humanities
+*** Erkenntnis und Daten über die Welt
+**** Kleine Anleihen an Terminologie Wittgensteins:
+***** Tractatus logico philosophicus als Vorlage
+***** Tractatus philosophicus digitalis
+**** Ziel des Umgangs mit Daten
+***** Aussagen über was da ist: explaining what there is
+****** Die Welt ist alles was der Fall ist, der Fall ist, was als Tatsache besteht.
+***** Erklärung warum etwas geworden ist, oder sich so verändert wie es wurde, wird, oder werden wird.
+**** Organisation
+** Vorl 2: Individuum und Art
+*** Metaziel
+    - Kooperation von Wissen
+      - Open Access von Daten, Wissen, Repositorien
+      - Shared libraries
+    - FAIR Prinzipien
+      - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4792175/
+      - http://datafairport.org/fair-principles-living-document-menu
+      - http://www.nature.com/articles/sdata201618
+*** Ziel
+    - Wissensdomaine: wie beschreibe ich mit einer hybriden Sprache
+      Sachverhalte der Wissensdomain?
+    - Individuum
+    - Art / Begriff / Prädikate
+    - Logische Form
+    -- Prädikatenlogik:  "ein Individuum a hat die Eigenschaft P"
+*** Beispiele
+**** Individuen
+    - Texte
+    - Wörter
+    - Materielle Gegenstände
+    - Sociale Strukturen: Ortschaften
+**** Typen / Eigenschaften
+    - Merkmale wie Symbolik, Materialität, Gestalt
+    - Gestalte des Vorkommnis
+    - Materiale Eigenschaften und Formen
+    - Soziale Strukturen
+**** Darstellung/Beschreibung/Modell
+***** Sätze treffen Aussagen über Sachverhalte
+| Tatsachen/Sachverhalte |Sätze/ Modelle/ Bilder / Comp. Ausdruck|
+|---+---|
+| besteht |wahr | 
+| besteht nicht |falsch | 
+*** Hybride Forschungspublikationen von wissenschaftlichen Narrativen
+**** Aufgabe: Forschungsbefunde erklären
+**** Aspekte eines Forschungsnarrativs:
+***** Fragestellung
+***** Mittel
+***** Datenbearbeitung
+***** Datenanalyse
+***** Hypothesenbewertung
+***** Diskussion
+*** Datenstrukturen
+**** Data processing
+   - http://pandas.pydata.org/pandas-docs/stable/tutorials.html
+* Themen
+** 
+**** Messy data cleaning
+***** Open Refine https://github.com/OpenRefine/OpenRefine/wiki/Reconcilable-Data-Sources
+**** Operations on Data
+***** subsetting
+***** slicing
+***** filtering, 
+***** merging, 
+***** groupBy, 
+***** re-ordering, 
+***** and re-shaping.
+**** Pandas Cookbook
+***** http://pandas.pydata.org/pandas-docs/stable/cookbook.html#cookbook
+
+** Vorl xx: Bayes
+** Vorl x: Phylogenetische Bäume
+** Vorl x1: Textanalyse mit Textblog
+*** Natural Language
+    - 
+* Ressourcen
+*** Dokumente
+*** Software, Installation
+**** Computational in Python
+     - https://pypi.python.org/pypi
+**** Notebooks und literate Programming
+    - http://nbviewer.jupyter.org/github/ipython/ipython/blob/2.x/examples/Notebook/Index.ipynb
+**** Pandas Datenorganisation
+    - http://pandas.pydata.org/pandas-docs/stable/index.html
+**** Jupyter Notebooks
+***** Arbeiten mit Jupyter Notebooks
+      - http://lectures.quantecon.org/py/getting_started.html 
+***** Tips
+      -  https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/
+
 * Zugang
 ** Notebooks anschauen
 *[[https://github.com/computational-humanities/vorlesung/blob/master/index.ipynb][Index-Notebook]]*
@@ -37,56 +136,6 @@ Um Notebook-Änderungen dauerhaft verfügbar zu haben,  bieten sich mehrere Möglic
 - Die einfachste Möglichkeit ist, die Änderungen in Binder lokal zu speichern und dann für das weiter-bearbeiten bei der nächsten Anmeldung wieder hochzuladen. Dazu wird im Menü File -> Open ausgewählt und in dem neuen Browser-Fenster der Knopf Upload gedrückt. Dann einfach den Hinweisen folgen.
 - Die etwas anspruchsvollere Variante wäre eine Installation der Jupyter-Umgebung auf dem eigenen Rechner. Dies kann relativ einfach durch das [[https://www.continuum.io/downloads][Anaconda]] Paket geschehen. Allerdings müssen dann spezielle Software-Pakete per Hand nach installiert werden.
 - Im [[https://sagemathcloud.com/][SageMathCloud]] Service wird eine kostenlose Jupyter-Notebook Umgebung geboten (und noch viel mehr...). Allerdings können fehlende Software-Pakete nicht problemlos (d.h. kostenlos) nach installiert werden. 
-
-* Vorlesung
-** Vorl 1: Einführung
-*** Thema der Vorlesung
-**** Digital Humantities vs. Computational Humanities
-*** Erkenntnis und Daten über die Welt
-**** Kleine Anleihen an Terminologie Wittgensteins:
-***** Tractatus logico philosophicus als Vorlage
-***** Tractatus philosophicus digitalis
-**** Ziel des Umgangs mit Daten
-***** Aussagen über was da ist: explaining what there is
-****** Die Welt ist alles was der Fall ist, der Fall ist, was als Tatsache besteht.
-***** Erklärung warum etwas geworden ist, oder sich so verändert wie es wurde, wird, oder werden wird.
-**** Organisation
-** Vorl 2: Daten und Objekte
-*** Datenstrukturen
-*** Data processing
-   - http://pandas.pydata.org/pandas-docs/stable/tutorials.html
-**** Messy data cleaning
-***** Open Refine https://github.com/OpenRefine/OpenRefine/wiki/Reconcilable-Data-Sources
-**** Operations on Data
-***** subsetting
-***** slicing
-***** filtering, 
-***** merging, 
-***** groupBy, 
-***** re-ordering, 
-***** and re-shaping.
-**** Pandas Cookbook
-***** http://pandas.pydata.org/pandas-docs/stable/cookbook.html#cookbook
-** Vorl xx: Bayes
-
-** Vorl x: Phylogenetische Bäume
-** Vorl x1: Textanalyse mit Textblog
-*** Natural Language
-    - 
-* Ressourcen
-*** Dokumente
-*** Software, Installation
-**** Computational in Python
-     - https://pypi.python.org/pypi
-**** Notebooks und literate Programming
-    - http://nbviewer.jupyter.org/github/ipython/ipython/blob/2.x/examples/Notebook/Index.ipynb
-**** Pandas Datenorganisation
-    - http://pandas.pydata.org/pandas-docs/stable/index.html
-**** Jupyter Notebooks
-***** Arbeiten mit Jupyter Notebooks
-      - http://lectures.quantecon.org/py/getting_started.html 
-***** Tips
-      -  https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/
 
 * Workflow
 ** Github
