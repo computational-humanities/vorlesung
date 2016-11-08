@@ -1,4 +1,7 @@
 # Wissenschaftstheoretische Aspekte der Digital Humanities
+
+[Homepage der Vorlesung](https://computational-humanities.github.io/vorlesung)
+
 ## Vorlesung WiSe2016/2017
 
 [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org:/repo/computational-humanities/vorlesung)
