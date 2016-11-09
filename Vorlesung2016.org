@@ -24,7 +24,7 @@
 *[[http://mybinder.org/repo/computational-humanities/vorlesung][Hier klicken]]* um Notebooks zu bearbeiten.
 
 * Vorlesung
-** Vorl 1: Einführung
+** Vorl Ein: Einführung
 *** Thema der Vorlesung
 **** Digital Humantities vs. Computational Humanities
 *** Erkenntnis und Daten über die Welt
@@ -36,7 +36,7 @@
 ****** Die Welt ist alles was der Fall ist, der Fall ist, was als Tatsache besteht.
 ***** Erklärung warum etwas geworden ist, oder sich so verändert wie es wurde, wird, oder werden wird.
 **** Organisation
-** Vorl 2: Individuum und Art
+** Vorl 1: Individuum und Art
 *** Metaziel
     - Kooperation von Wissen
       - Open Access von Daten, Wissen, Repositorien
@@ -81,6 +81,8 @@
 *** Datenstrukturen
 **** Data processing
    - http://pandas.pydata.org/pandas-docs/stable/tutorials.html
+** Vorl 2: Gruppen und Daten
+*** 
 * Themen
 ** 
 **** Messy data cleaning
