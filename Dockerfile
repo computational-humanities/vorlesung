@@ -36,3 +36,5 @@ RUN conda install -c conda-forge jupyter_contrib_nbextensions && \
         pip install -r requirements.txt"
 
 RUN conda install -y -c conda-forge ipywidgets
+
+RUN pip install -U textblob && python -m textblob.download_corpora lite
