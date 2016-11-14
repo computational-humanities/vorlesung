@@ -1,0 +1,15 @@
+\BOOKMARK [1][-]{section.1}{Vorlesung\0402:\040Gruppen\040von\040Individuen}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Data\040mit\040Pandas\040Dataframes}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Pandas\040Dataframes}{section.1}% 3
+\BOOKMARK [1][-]{section.2}{Konstruktion\040neuer\040Merkmale}{}% 4
+\BOOKMARK [2][-]{subsection.2.1}{Textmuster mit regulären Ausdrücken}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.2}{Textmustersuche\040in\040der\040Beschreibung\040einer\040Polis}{section.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Neue\040Funktionen}{subsection.2.2}% 7
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Geographische\040Koordinaten}{subsection.2.2}% 8
+\BOOKMARK [3][-]{subsubsection.2.2.3}{Zitatnachweise,\040Namen,\040Jahreszahlen}{subsection.2.2}% 9
+\BOOKMARK [2][-]{subsection.2.3}{Muster\040\(Pattern\)\040zur\040Erkennung\040der\040Literaturreferenzen}{section.2}% 10
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Testen der regulären Ausdrücke}{subsection.2.3}% 11
+\BOOKMARK [2][-]{subsection.2.4}{Muster\040zur\040Erkennung\040von\040Namen}{section.2}% 12
+\BOOKMARK [1][-]{section.3}{Datenvalidierung}{}% 13
+\BOOKMARK [2][-]{subsection.3.1}{Wertverteilungen,\040Test\040auf\040Dopplungen}{section.3}% 14
+\BOOKMARK [2][-]{subsection.3.2}{Visualisierungen}{section.3}% 15
