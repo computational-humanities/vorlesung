@@ -37,4 +37,5 @@ RUN conda install -c conda-forge jupyter_contrib_nbextensions && \
 
 RUN conda install -y -c conda-forge ipywidgets
 
-RUN pip install -U textblob && python -m textblob.download_corpora lite
+RUN bash -c "source activate python3 && pip3 install -U textblob && \
+    python3 -m textblob.download_corpora lite
