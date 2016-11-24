@@ -21,7 +21,8 @@
 
 * Eingang
 #+ATTR_HTML: :target _blank 
-*[[http://141.20.184.253:8000/][Hier klicken]]* um Notebooks zu bearbeiten.
+- *[[http://141.20.184.253:8000/][Hier klicken]]* um Notebooks zu bearbeiten (~10 Slots).
+- *[[http://141.20.185.1:8000][Alternative]]* bitte auch nutzen (~30 Slots). 
 
 * Vorlesung
 ** Vorl Ein: Einführung
