@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Wissenschaftstheorie und Computational Humanities</title>
-<!-- 2016-11-24 Do 08:44 -->
+<!-- 2016-12-07 Mi 19:52 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Gerd Graßhoff" />
@@ -156,13 +156,13 @@ for the JavaScript code in this tag.
 <li><a href="#sec-1">1. Eingang</a></li>
 <li><a href="#sec-2">2. Vorlesung</a>
 <ul>
-<li><a href="#sec-2-1">2.1. Vorl Ein: Einführung</a>
+<li><a href="#sec-2-1">2.1. Vorl: Einführung</a>
 <ul>
 <li><a href="#sec-2-1-1">2.1.1. Thema der Vorlesung</a></li>
 <li><a href="#sec-2-1-2">2.1.2. Erkenntnis und Daten über die Welt</a></li>
 </ul>
 </li>
-<li><a href="#sec-2-2">2.2. Vorl 1: Individuum und Art</a>
+<li><a href="#sec-2-2">2.2. Vorl: Individuum und Art: Datentypen in Python</a>
 <ul>
 <li><a href="#sec-2-2-1">2.2.1. Metaziel</a></li>
 <li><a href="#sec-2-2-2">2.2.2. Ziel</a></li>
@@ -171,23 +171,22 @@ for the JavaScript code in this tag.
 <li><a href="#sec-2-2-5">2.2.5. Datenstrukturen</a></li>
 </ul>
 </li>
-<li><a href="#sec-2-3">2.3. Vorl 2: Gruppen und Daten</a>
-<ul>
-<li><a href="#sec-2-3-1">2.3.1. </a></li>
+<li><a href="#sec-2-3">2.3. Vorl: Gruppen und Daten, Pandas</a></li>
+<li><a href="#sec-2-4">2.4. Vorl: Texte und Muster, reguläre Ausdrücke</a></li>
+<li><a href="#sec-2-5">2.5. Vorl: Text und Sprachverarbeitung: NLTK und SLTK</a></li>
+<li><a href="#sec-2-6">2.6. Vorl: Klassische Sprachen: classical language toolkit</a></li>
+<li><a href="#sec-2-7">2.7. Vorl: Wissen der Cloud: beautiful soup</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li><a href="#sec-3">3. Themen</a>
+<li><a href="#sec-3">3. Projekte</a>
 <ul>
-<li><a href="#sec-3-1">3.1. </a></li>
-<li><a href="#sec-3-2">3.2. Vorl xx: Bayes</a></li>
-<li><a href="#sec-3-3">3.3. Vorl x: Phylogenetische Bäume</a></li>
-<li><a href="#sec-3-4">3.4. Vorl x1: Textanalyse mit Textblog</a>
-<ul>
-<li><a href="#sec-3-4-1">3.4.1. Natural Language</a></li>
-</ul>
-</li>
+<li><a href="#sec-3-1">3.1. Dekor und Sonnenuhren</a></li>
+<li><a href="#sec-3-2">3.2. Parapegmata</a></li>
+<li><a href="#sec-3-3">3.3. Phaseis</a></li>
+<li><a href="#sec-3-4">3.4. Rock Art</a></li>
+<li><a href="#sec-3-5">3.5. Lateinische Wissenschaftssprache: CLTK</a></li>
+<li><a href="#sec-3-6">3.6. Kalte Fusion</a></li>
+<li><a href="#sec-3-7">3.7. Ptolemaios Geographie</a></li>
 </ul>
 </li>
 <li><a href="#sec-4">4. Ressourcen</a>
@@ -202,9 +201,10 @@ for the JavaScript code in this tag.
 </li>
 <li><a href="#sec-5">5. Zugang</a>
 <ul>
-<li><a href="#sec-5-1">5.1. Notebooks anschauen</a></li>
-<li><a href="#sec-5-2">5.2. Notebooks interaktiv nutzen</a></li>
-<li><a href="#sec-5-3">5.3. Notebooks dauerhaft bearbeiten</a></li>
+<li><a href="#sec-5-1">5.1. JupyterHub für HU Studierende</a></li>
+<li><a href="#sec-5-2">5.2. Notebooks anschauen</a></li>
+<li><a href="#sec-5-3">5.3. Notebooks interaktiv nutzen</a></li>
+<li><a href="#sec-5-4">5.4. Notebooks dauerhaft bearbeiten</a></li>
 </ul>
 </li>
 <li><a href="#sec-6">6. Workflow</a>
@@ -235,7 +235,7 @@ for the JavaScript code in this tag.
 <h2 id="sec-2"><span class="section-number-2">2</span> Vorlesung</h2>
 <div class="outline-text-2" id="text-2">
 </div><div id="outline-container-sec-2-1" class="outline-3">
-<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Vorl Ein: Einführung</h3>
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Vorl: Einführung</h3>
 <div class="outline-text-3" id="text-2-1">
 </div><div id="outline-container-sec-2-1-1" class="outline-4">
 <h4 id="sec-2-1-1"><span class="section-number-4">2.1.1</span> Thema der Vorlesung</h4>
@@ -256,7 +256,7 @@ for the JavaScript code in this tag.
 </div>
 </div>
 <div id="outline-container-sec-2-2" class="outline-3">
-<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Vorl 1: Individuum und Art</h3>
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Vorl: Individuum und Art: Datentypen in Python</h3>
 <div class="outline-text-3" id="text-2-2">
 </div><div id="outline-container-sec-2-2-1" class="outline-4">
 <h4 id="sec-2-2-1"><span class="section-number-4">2.2.1</span> Metaziel</h4>
@@ -387,50 +387,44 @@ Sachverhalte der Wissensdomain?
 </div>
 </div>
 <div id="outline-container-sec-2-3" class="outline-3">
-<h3 id="sec-2-3"><span class="section-number-3">2.3</span> Vorl 2: Gruppen und Daten</h3>
-<div class="outline-text-3" id="text-2-3">
-</div><div id="outline-container-sec-2-3-1" class="outline-4">
-<h4 id="sec-2-3-1"><span class="section-number-4">2.3.1</span> </h4>
+<h3 id="sec-2-3"><span class="section-number-3">2.3</span> Vorl: Gruppen und Daten, Pandas</h3>
 </div>
+<div id="outline-container-sec-2-4" class="outline-3">
+<h3 id="sec-2-4"><span class="section-number-3">2.4</span> Vorl: Texte und Muster, reguläre Ausdrücke</h3>
+</div>
+<div id="outline-container-sec-2-5" class="outline-3">
+<h3 id="sec-2-5"><span class="section-number-3">2.5</span> Vorl: Text und Sprachverarbeitung: NLTK und SLTK</h3>
+</div>
+<div id="outline-container-sec-2-6" class="outline-3">
+<h3 id="sec-2-6"><span class="section-number-3">2.6</span> Vorl: Klassische Sprachen: classical language toolkit</h3>
+</div>
+<div id="outline-container-sec-2-7" class="outline-3">
+<h3 id="sec-2-7"><span class="section-number-3">2.7</span> Vorl: Wissen der Cloud: beautiful soup</h3>
 </div>
 </div>
 <div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> Themen</h2>
+<h2 id="sec-3"><span class="section-number-2">3</span> Projekte</h2>
 <div class="outline-text-2" id="text-3">
 </div><div id="outline-container-sec-3-1" class="outline-3">
-<h3 id="sec-3-1"><span class="section-number-3">3.1</span> </h3>
-<div class="outline-text-3" id="text-3-1">
-</div><ol class="org-ol"><li><a id="sec-3-1-0-1" name="sec-3-1-0-1"></a>Messy data cleaning<br  /><ol class="org-ol"><li><a id="sec-3-1-0-1-1" name="sec-3-1-0-1-1"></a>Open Refine <a href="https://github.com/OpenRefine/OpenRefine/wiki/Reconcilable-Data-Sources">https://github.com/OpenRefine/OpenRefine/wiki/Reconcilable-Data-Sources</a><br  /></li></ol>
-</li>
-<li><a id="sec-3-1-0-2" name="sec-3-1-0-2"></a>Operations on Data<br  /><ol class="org-ol"><li><a id="sec-3-1-0-2-1" name="sec-3-1-0-2-1"></a>subsetting<br  /></li>
-<li><a id="sec-3-1-0-2-2" name="sec-3-1-0-2-2"></a>slicing<br  /></li>
-<li><a id="sec-3-1-0-2-3" name="sec-3-1-0-2-3"></a>filtering,<br  /></li>
-<li><a id="sec-3-1-0-2-4" name="sec-3-1-0-2-4"></a>merging,<br  /></li>
-<li><a id="sec-3-1-0-2-5" name="sec-3-1-0-2-5"></a>groupBy,<br  /></li>
-<li><a id="sec-3-1-0-2-6" name="sec-3-1-0-2-6"></a>re-ordering,<br  /></li>
-<li><a id="sec-3-1-0-2-7" name="sec-3-1-0-2-7"></a>and re-shaping.<br  /></li></ol>
-</li>
-<li><a id="sec-3-1-0-3" name="sec-3-1-0-3"></a>Pandas Cookbook<br  /><ol class="org-ol"><li><a id="sec-3-1-0-3-1" name="sec-3-1-0-3-1"></a><a href="http://pandas.pydata.org/pandas-docs/stable/cookbook.html#cookbook">http://pandas.pydata.org/pandas-docs/stable/cookbook.html#cookbook</a><br  /></li></ol>
-</li></ol>
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> Dekor und Sonnenuhren</h3>
 </div>
-
 <div id="outline-container-sec-3-2" class="outline-3">
-<h3 id="sec-3-2"><span class="section-number-3">3.2</span> Vorl xx: Bayes</h3>
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> Parapegmata</h3>
 </div>
 <div id="outline-container-sec-3-3" class="outline-3">
-<h3 id="sec-3-3"><span class="section-number-3">3.3</span> Vorl x: Phylogenetische Bäume</h3>
+<h3 id="sec-3-3"><span class="section-number-3">3.3</span> Phaseis</h3>
 </div>
 <div id="outline-container-sec-3-4" class="outline-3">
-<h3 id="sec-3-4"><span class="section-number-3">3.4</span> Vorl x1: Textanalyse mit Textblog</h3>
-<div class="outline-text-3" id="text-3-4">
-</div><div id="outline-container-sec-3-4-1" class="outline-4">
-<h4 id="sec-3-4-1"><span class="section-number-4">3.4.1</span> Natural Language</h4>
-<div class="outline-text-4" id="text-3-4-1">
-<ul class="org-ul">
-<li></li>
-</ul>
+<h3 id="sec-3-4"><span class="section-number-3">3.4</span> Rock Art</h3>
 </div>
+<div id="outline-container-sec-3-5" class="outline-3">
+<h3 id="sec-3-5"><span class="section-number-3">3.5</span> Lateinische Wissenschaftssprache: CLTK</h3>
 </div>
+<div id="outline-container-sec-3-6" class="outline-3">
+<h3 id="sec-3-6"><span class="section-number-3">3.6</span> Kalte Fusion</h3>
+</div>
+<div id="outline-container-sec-3-7" class="outline-3">
+<h3 id="sec-3-7"><span class="section-number-3">3.7</span> Ptolemaios Geographie</h3>
 </div>
 </div>
 <div id="outline-container-sec-4" class="outline-2">
@@ -485,8 +479,19 @@ Sachverhalte der Wissensdomain?
 <h2 id="sec-5"><span class="section-number-2">5</span> Zugang</h2>
 <div class="outline-text-2" id="text-5">
 </div><div id="outline-container-sec-5-1" class="outline-3">
-<h3 id="sec-5-1"><span class="section-number-3">5.1</span> Notebooks anschauen</h3>
+<h3 id="sec-5-1"><span class="section-number-3">5.1</span> JupyterHub für HU Studierende</h3>
 <div class="outline-text-3" id="text-5-1">
+<p>
+Wenn Studierende für ein Projekt dauerhaften Zugang zu einer Jupyter Notebook Umgebung benötigen, können sie sich 
+per Email (von einem HU-Account) an den Administrator wenden (malte.vogl at hu-berlin Punkt de). Zwingend notwendig ist ein Github-Account (<a href="https://github.com/join">Sign-up</a>). 
+Der entsprechende Username wird vom Administrator benötigt, da die Authentifizierung über Github-Oauth erfolgt. Das Password wird natürlich nicht 
+benötigt! Zugang ist wie immer nur aus dem HU Netz möglich.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-5-2" class="outline-3">
+<h3 id="sec-5-2"><span class="section-number-3">5.2</span> Notebooks anschauen</h3>
+<div class="outline-text-3" id="text-5-2">
 <p>
 <b><a href="https://github.com/computational-humanities/vorlesung/blob/master/index.ipynb">Index-Notebook</a></b>
 </p>
@@ -498,9 +503,9 @@ In dem <a href="https://github.com/computational-humanities/vorlesung/blob/maste
 </div>
 </div>
 
-<div id="outline-container-sec-5-2" class="outline-3">
-<h3 id="sec-5-2"><span class="section-number-3">5.2</span> Notebooks interaktiv nutzen</h3>
-<div class="outline-text-3" id="text-5-2">
+<div id="outline-container-sec-5-3" class="outline-3">
+<h3 id="sec-5-3"><span class="section-number-3">5.3</span> Notebooks interaktiv nutzen</h3>
+<div class="outline-text-3" id="text-5-3">
 <p>
 <b><a href="http://mybinder.org/repo/computational-humanities/vorlesung">Binder-Umgebung</a></b>
 </p>
@@ -514,9 +519,9 @@ werden, muss das Notebook auf den eigenen Rechner heruntergeladen werden.
 </div>
 </div>
 
-<div id="outline-container-sec-5-3" class="outline-3">
-<h3 id="sec-5-3"><span class="section-number-3">5.3</span> Notebooks dauerhaft bearbeiten</h3>
-<div class="outline-text-3" id="text-5-3">
+<div id="outline-container-sec-5-4" class="outline-3">
+<h3 id="sec-5-4"><span class="section-number-3">5.4</span> Notebooks dauerhaft bearbeiten</h3>
+<div class="outline-text-3" id="text-5-4">
 <p>
 Um Notebook-Änderungen dauerhaft verfügbar zu haben,  bieten sich mehrere Möglichkeiten.
 </p>
@@ -625,7 +630,7 @@ angepasst werden. Die Änderungen können dann über die Binder-Status Seite üb
 <div id="postamble" class="status">
 <p class="date">Date: October 2016</p>
 <p class="author">Author: Gerd Graßhoff</p>
-<p class="date">Created: 2016-11-24 Do 08:44</p>
+<p class="date">Created: 2016-12-07 Mi 19:52</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>

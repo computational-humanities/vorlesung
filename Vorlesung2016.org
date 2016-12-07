@@ -111,6 +111,11 @@
       -  https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/
 
 * Zugang
+** JupyterHub für HU Studierende
+Wenn Studierende für ein Projekt dauerhaften Zugang zu einer Jupyter Notebook Umgebung benötigen, können sie sich 
+per Email (von einem HU-Account) an den Administrator wenden (malte.vogl at hu-berlin Punkt de). Zwingend notwendig ist ein Github-Account ([[https://github.com/join][Sign-up]]). 
+Der entsprechende Username wird vom Administrator benötigt, da die Authentifizierung über Github-Oauth erfolgt. Das Password wird natürlich nicht 
+benötigt! Zugang ist wie immer nur aus dem HU Netz möglich.
 ** Notebooks anschauen
 *[[https://github.com/computational-humanities/vorlesung/blob/master/index.ipynb][Index-Notebook]]*
 
