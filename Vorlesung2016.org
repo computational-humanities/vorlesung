@@ -25,7 +25,7 @@
 - *[[http://141.20.185.1:8000][Alternative]]* bitte auch nutzen (~30 Slots). 
 
 * Vorlesung
-** Vorl Ein: Einführung
+** Vorl: Einführung
 *** Thema der Vorlesung
 **** Digital Humantities vs. Computational Humanities
 *** Erkenntnis und Daten über die Welt
@@ -37,7 +37,7 @@
 ****** Die Welt ist alles was der Fall ist, der Fall ist, was als Tatsache besteht.
 ***** Erklärung warum etwas geworden ist, oder sich so verändert wie es wurde, wird, oder werden wird.
 **** Organisation
-** Vorl 1: Individuum und Art
+** Vorl: Individuum und Art: Datentypen in Python
 *** Metaziel
     - Kooperation von Wissen
       - Open Access von Daten, Wissen, Repositorien
@@ -82,28 +82,19 @@
 *** Datenstrukturen
 **** Data processing
    - http://pandas.pydata.org/pandas-docs/stable/tutorials.html
-** Vorl 2: Gruppen und Daten
-*** 
-* Themen
-** 
-**** Messy data cleaning
-***** Open Refine https://github.com/OpenRefine/OpenRefine/wiki/Reconcilable-Data-Sources
-**** Operations on Data
-***** subsetting
-***** slicing
-***** filtering, 
-***** merging, 
-***** groupBy, 
-***** re-ordering, 
-***** and re-shaping.
-**** Pandas Cookbook
-***** http://pandas.pydata.org/pandas-docs/stable/cookbook.html#cookbook
-
-** Vorl xx: Bayes
-** Vorl x: Phylogenetische Bäume
-** Vorl x1: Textanalyse mit Textblog
-*** Natural Language
-    - 
+** Vorl: Gruppen und Daten, Pandas
+** Vorl: Texte und Muster, reguläre Ausdrücke
+** Vorl: Text und Sprachverarbeitung: NLTK und SLTK
+** Vorl: Klassische Sprachen: classical language toolkit
+** Vorl: Wissen der Cloud: beautiful soup
+* Projekte
+** Dekor und Sonnenuhren
+** Parapegmata
+** Phaseis
+** Rock Art
+** Lateinische Wissenschaftssprache: CLTK
+** Kalte Fusion
+** Ptolemaios Geographie
 * Ressourcen
 *** Dokumente
 *** Software, Installation
