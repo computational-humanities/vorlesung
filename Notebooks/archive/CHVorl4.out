@@ -1,0 +1,27 @@
+\BOOKMARK [1][-]{section.1}{Vorlesung 4: Strukturen von Texten 2}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Text als Dataframe Poleis}{section.1}% 2
+\BOOKMARK [1][-]{section.2}{Konstruktion neuer Merkmale}{}% 3
+\BOOKMARK [2][-]{subsection.2.1}{Textmuster mit regul\344ren Ausdr\374cken}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.2}{Textmustersuche in der Beschreibung einer Polis}{section.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Neue Funktionen}{subsection.2.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Geographische Koordinaten}{subsection.2.2}% 7
+\BOOKMARK [3][-]{subsubsection.2.2.3}{Zitatnachweise, Namen, Jahreszahlen}{subsection.2.2}% 8
+\BOOKMARK [2][-]{subsection.2.3}{Muster \(Pattern\) zur Erkennung der Literaturreferenzen}{section.2}% 9
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Testen der regul\344ren Ausdr\374cke}{subsection.2.3}% 10
+\BOOKMARK [2][-]{subsection.2.4}{Muster zur Erkennung von Namen}{section.2}% 11
+\BOOKMARK [1][-]{section.3}{Datenvalidierung}{}% 12
+\BOOKMARK [2][-]{subsection.3.1}{Bewertung des Modells mit Performanz- \(Konfusions-\)matrix}{section.3}% 13
+\BOOKMARK [2][-]{subsection.3.2}{Wertverteilungen, Test auf Dopplungen}{section.3}% 14
+\BOOKMARK [1][-]{section.4}{Gr\366\337ere Textbl\366cke, mit textblob and NLTK}{}% 15
+\BOOKMARK [2][-]{subsection.4.1}{Alternative loading of data from online resources}{section.4}% 16
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Github}{subsection.4.1}% 17
+\BOOKMARK [3][-]{subsubsection.4.1.2}{edition-topoi.org}{subsection.4.1}% 18
+\BOOKMARK [2][-]{subsection.4.2}{Eigenschaften des Datasets PoleisRawData2}{section.4}% 19
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Textblob}{subsection.4.2}% 20
+\BOOKMARK [2][-]{subsection.4.3}{Create dataframe}{section.4}% 21
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Get city identifier}{subsection.4.3}% 22
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Collection of all citations}{subsection.4.3}% 23
+\BOOKMARK [3][-]{subsubsection.4.3.3}{Transformation of coordinates}{subsection.4.3}% 24
+\BOOKMARK [3][-]{subsubsection.4.3.4}{Proper nouns}{subsection.4.3}% 25
+\BOOKMARK [3][-]{subsubsection.4.3.5}{Cross links to other cities}{subsection.4.3}% 26
+\BOOKMARK [2][-]{subsection.4.4}{Display dataframe}{section.4}% 27
