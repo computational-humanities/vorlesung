@@ -35,13 +35,73 @@ data = json.load(data_file)
 
 #Create database for diaTyp description
 dfInstances = pd.DataFrame(data['instances']['diaTyp'])
+dfAttrDescr = pd.DataFrame(data['instances']['attributes'])
+
 
 #############################################
 #Open image for diagramID in new cell or tab#
 #############################################
+def diaAttrCheck(dataframe, author, diaTyp):
+    """
+    Opens all pictures for given author and diaTyp as a grid.
+
+    :param author: Name of Author
+    :type author: string
+    :param textID: text ID
+    :type textID: string
+    :param dataframe: dataframe
+    :type dataframe: pandas.DataFrame
+
+    :returns: inline html table
+    """
+    #url_list = [] ['author',author], author,
+    imageList = []
+    diaList = []
+    indexList = []
+    listRows = []
+    listIDRows = []
+
+    reddf = dataframe[(dataframe["author"]==author) & (dataframe['diaTyp'] ==diaTyp)].reset_index(drop=True)
+    dfAttrRed = dfAttrDescr[dfAttrDescr['AttributeID'].str[1:3] == str(diaTyp)]
+    
+    attrDesc = dict(dfAttrRed[['AttributeID','AttributeText']].values)
+    
+    url0 = 'http://repository.edition-topoi.org/CitableHandler/MAPD/single/'
+    url1 = 'http://repository.edition-topoi.org/CitableHandler/MAPD/file/'
+
+    for diaID in reddf.diaID:
+        r = requests.get(url0 + diaID[4:] + '?getDigitalFormats')
+        if type(r.json()) == list:
+            filename = r.json()[0]['file']
+            url_target = url1 + diaID[4:] + '/'+ filename + '?getDigitalFormat'
+            imageList.append(url_target)
+            diaList.append(diaID)
+            indexList.append(reddf[reddf['diaID']==diaID].index.values[0])
+
+    listImgSrc = ['<td><img src={0} + width=100%/></td>'.format(x) for x in imageList]
+    listTableData = [listImgSrc[x:x+3] for x in range(0,len(listImgSrc),3)]
+
+    for x in listTableData:
+        res = '<tr>' + ''.join(x) + '</tr>'
+        listRows.append(res)
+
+    url_start2 = 'http://repository.edition-topoi.org/digilib/digilib.html?fn=/MAPD/ReposMAPD/EastwoodCollection/'
+    idList = ['<td><a target="_blank" href={0}>{1}</a>, {2}</td>'.format(url_start2 + reddf['diaURL'].loc[x],reddf['diaID'].loc[x], 'Attr:' + ', '.join(sorted(['<span title="{2}">{0}</span>: {1}'.format(key[0],key[1],attrDesc[key[0]]) for key in reddf['diaAttr'].loc[x][0].items()]))) for x in indexList]
+    
+    idListData = [idList[x:x+3] for x in range(0,len(idList),3)]
+
+    for x in idListData:
+        res = '<tr>' + ''.join(x) + '</tr>'
+        listIDRows.append(res)
+
+    fullData = [x + y for x,y in zip(listRows,listIDRows)]
+
+    htmlcode = '<table style="width:100%"><tr><th width="33%">Diagrams of type {0} from author {1} </th><th width="33%"></th><th width="33%"></th></tr>'.format(diaTyp,author) + ''.join(fullData) + '</table>'
+
+    return HTML(htmlcode)
 
 
-def id2image(dataframe, diaID):
+def id2image(dataframe, diaID, width=100):
     """
     Opens link to picture of diagram type inline.
 
@@ -55,7 +115,7 @@ def id2image(dataframe, diaID):
     url_start = 'http://repository.edition-topoi.org/digilib/digilib.html?fn=/MAPD/ReposMAPD/EastwoodCollection/'
     url_end = dataframe[dataframe['diaID']==diaID].reset_index(drop=True)['diaURL'][0]
     #print(url_start + url_end)
-    return HTML('<iframe src=' + url_start + url_end + ' + width=100% height=460></iframe>')
+    return HTML('<iframe src=' + url_start + url_end + ' + width={0}% height=460></iframe>'.format(width))
 
 def diaTypeGrid(dataframe, author, diaTyp):
     """
