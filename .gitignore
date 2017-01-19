@@ -3,3 +3,4 @@
 
 # IPython Notebook
 .ipynb_checkpoints
+__pychache__
