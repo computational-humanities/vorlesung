@@ -66,6 +66,14 @@ def diaAttrCheck(dataframe, author, diaTyp):
     
     attrDesc = dict(dfAttrRed[['AttributeID','AttributeText']].values)
     
+    def attrCheck(dictAttr, key):
+        if key in dictAttr.keys():
+            res = dictAttr[key]
+        else:
+            res = 'No description found.'
+        return res
+            
+    
     url0 = 'http://repository.edition-topoi.org/CitableHandler/MAPD/single/'
     url1 = 'http://repository.edition-topoi.org/CitableHandler/MAPD/file/'
 
@@ -86,7 +94,7 @@ def diaAttrCheck(dataframe, author, diaTyp):
         listRows.append(res)
 
     url_start2 = 'http://repository.edition-topoi.org/digilib/digilib.html?fn=/MAPD/ReposMAPD/EastwoodCollection/'
-    idList = ['<td><a target="_blank" href={0}>{1}</a>, {2}</td>'.format(url_start2 + reddf['diaURL'].loc[x],reddf['diaID'].loc[x], 'Attr:' + ', '.join(sorted(['<span title="{2}">{0}</span>: {1}'.format(key[0],key[1],attrDesc[key[0]]) for key in reddf['diaAttr'].loc[x][0].items()]))) for x in indexList]
+    idList = ['<td><a target="_blank" href={0}>{1}</a>, {2}</td>'.format(url_start2 + reddf['diaURL'].loc[x],reddf['diaID'].loc[x], 'Attr:' + ', '.join(sorted(['<span title="{2}">{0}</span>: {1}'.format(key[0],key[1],attrCheck(attrDesc,key[0])) for key in reddf['diaAttr'].loc[x][0].items()]))) for x in indexList]
     
     idListData = [idList[x:x+3] for x in range(0,len(idList),3)]
 
