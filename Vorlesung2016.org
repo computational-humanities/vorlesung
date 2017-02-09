@@ -105,10 +105,13 @@
 **** Pandas Datenorganisation
     - http://pandas.pydata.org/pandas-docs/stable/index.html
 **** Jupyter Notebooks
+***** Interessante Beispiele
+      - https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-and-IPython-Notebooks
 ***** Arbeiten mit Jupyter Notebooks
       - http://lectures.quantecon.org/py/getting_started.html 
 ***** Tips
-      -  https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/
+      - https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/
+
 
 * Zugang
 ** JupyterHub für HU Studierende
